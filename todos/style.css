@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#container{
+    margin-top: 20px;
+    border: 2px solid grey;
+    width: 50%;
+    margin: auto;
+}
+#header{
+    padding: 5px;
+    height: 50px;
+    background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header button{
+    padding: 10px 20px;
+    background-color: plum;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#header button:hover{
+    background-color: rosybrown;
+}
+
+#list{
+    min-height: 300px;
+    list-style: none;
+    margin: 20px 10px;
+    padding: 0;
+   
+}
+li{
+    margin: 10px 0;
+}
+li p{
+   display: inline;
+}
+li #del{
+    float: right;
+    cursor: pointer;
+}
+.linethrough{
+    text-decoration: line-through;
+    background-color: brown;
+}
+#add-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#text{
+    padding: 10px;
+    width: 300px;
+}
+#add-btn{
+    padding: 10px 30px;
+    background-color: green;
+    color: #fff;
+}

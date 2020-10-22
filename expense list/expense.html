@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        *,
+        ::before,
+        :after{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 960px;
+            background-color: #ddd;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .container h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: indigo;
+        }
+        #name{
+            width: 900px;
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        #date{
+            width: 450px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        #amount{
+            width: 450px;
+            padding: 10px;
+        }
+        .expense-btn{
+            text-align: center;
+        }
+        .expense-btn button{
+            padding: 5px 10px;
+            background-color: green;
+            border: none;
+            color: #fff;
+        }
+       table{
+            margin: 20px auto;
+            border-collapse: collapse;
+       }
+       tr{
+           width: 100%;
+           border: 2px solid #000;
+           
+       }
+       th{
+           text-align: left;
+           padding: 5px 20px;
+           border-right: 1px solid #333;
+       }
+       .name{
+           width: 300px;
+       }
+       .date{
+           width: 300px;
+       }
+       .amount{
+           width: 300px;
+       }
+       tr td{
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+       }
+       .close{
+           float: right;
+           padding: 5px;
+           background-color: red;
+           color: #fff;
+           outline: none;
+           cursor: pointer;
+       }
+       .close:hover{
+           background-color: grey;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>An Expensive Tracker</h1>
+        <div class="input-section">
+            <input type="text" id="name" placeholder="Enter your name here">
+            <input type="date" id="date">
+            <input type="number" id="amount">
+        </div>
+        <div class="expense-btn">
+            <button>Add Expense</button>
+        </div>
+        <div class="output">
+           <table>
+               <tbody  id="table">
+            <tr id="text-header">
+                <th class="name">Name</th>
+                <th class="date">Date</th>
+                <th class="amount">Amount</th>
+            </tr>
+
+            <!-- <tr id="text-display">
+                <td class="name"></td>
+                <td class="date"></td>
+                <td class="amount"></td>
+            </tr> -->
+                </tbody>
+           </table>
+        </div>
+    </div>
+    <script src="expense.js"></script>
+</body>
+</html>
